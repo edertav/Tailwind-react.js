@@ -5,6 +5,10 @@ import Cards from "./components/cards";
 import Footer from "./components/footer";
 
 export default function App() {
+
+    const handleButtonClick = () => {
+      alert('Botão clicado!');
+    };
   return (
     <>
       <Header />
@@ -21,10 +25,11 @@ export default function App() {
                         mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece
                         como a personificação da vingança para a população.
                   </p>
-                  <button className=
+                  <button onClick={handleButtonClick} className=
                   "w-200px h-60px bg-customRed text-white py-8px px-10px rounded-5px cursor-pointer transition duration-800 text-18px flex justify-center items-center font-bold border-0 outline-none mt-6 hover:text-black hover:bg-white"
                   >Comprar Ingresso
                   </button>
+                  
               </div>
           </div>
       </div>
@@ -33,3 +38,4 @@ export default function App() {
     </>
   )
 }
+
